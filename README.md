@@ -9,27 +9,42 @@ Prueba Lomi es una aplicacion en rails para una prueba tecnica en la que se util
 Para levantar el proyecto sigue estas instrucciones:
 
 - Copiar el respositorio con el siguiente comando
-  $ git clone https://github.com/lMumen/prueba-lomi.git
 
+```bash
+git clone https://github.com/lMumen/prueba-lomi.git
+```
 - Abrir en la terminal la carpeta en la que se encuentra el repositorio
 
 - Una vez dentro realizar el bundle install
-  $ bundle install
+```bash
+bundle install
+```
 
 - En caso de que nos pida cambiar la version de ruby utilizar el siguiente comando
-  $ rvm install 2.7.4
+ ```bash
+ rvm install 2.7.4
+ ```
 
 - Despues hay que correr las migraciones utilizando el comando
-  $ rails db:migrate
 
+```bash
+rails db:migrate
+```
 - Puede que nos indique que no tenemos la base de datos creada, en tal caso correr el siguiente comando y luego volver a correr el comando de arriba para realizar la migracion
-  $ createdb prueba_lomi_development
+
+```bash
+createdb prueba_lomi_development
+```
 
 - Despues hay que correr el seed utilizando
-  $ rails db:seed
 
+```bash
+rails db:seed
+```
 - Luego para acceder a la consola de rails utilizar
-  $ rails c
 
+```bash
+rails c
+```
 - Una ves con consola ya podras utilizar los diferentes modelos y objetos creados por el seed
 
