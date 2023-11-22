@@ -13,27 +13,35 @@ Para levantar el proyecto sigue estas instrucciones:
 ```bash
 git clone https://github.com/lMumen/prueba-lomi.git
 ```
+
 - Abrir en la terminal la carpeta en la que se encuentra el repositorio
 
+```bash
+cd prueba-lomi
+```
+
 - Una vez dentro realizar el bundle install
+
 ```bash
 bundle install
 ```
 
-- En caso de que nos pida cambiar la version de ruby utilizar el siguiente comando
- ```bash
- rvm install 2.7.4
- ```
+- En caso de que nos pida instalar la version de ruby utilizar el siguiente comando, luego volver a realizar bundle
+
+```bash
+rvm install 2.7.4
+```
+
+- Ahora debemos crear la base de datos utilizando el comando
+
+```bash
+rails db:create
+```
 
 - Despues hay que correr las migraciones utilizando el comando
 
 ```bash
 rails db:migrate
-```
-- Puede que nos indique que no tenemos la base de datos creada, en tal caso correr el siguiente comando y luego volver a correr el comando de arriba para realizar la migracion
-
-```bash
-createdb prueba_lomi_development
 ```
 
 - Despues hay que correr el seed utilizando
@@ -46,5 +54,22 @@ rails db:seed
 ```bash
 rails c
 ```
+
 - Una ves con consola ya podras utilizar los diferentes modelos y objetos creados por el seed
 
+Consultas de ejemplo:
+
+- El nombre del ultimo producto del ultimo carrito creado
+```bash
+Cart.last.products.last.name
+```
+
+- Todos los carritos de compra que estan pagados
+```bash
+Cart.payed
+```
+
+- Nombre completo del cliente que realizo la ultima orden de compra
+```bash
+OrderDetail.last.client.full_name
+```
