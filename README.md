@@ -1,6 +1,6 @@
 # Prueba LOMI
 
-Prueba Lomi es una aplicacion en rails para una prueba tecnica en la que se utilizan los modelos y relaciones de rails para crear un sistema de registro y venta de productos.
+Prueba Lomi es una aplicación en rails para una prueba técnica en la que se utilizan los modelos y relaciones de rails para crear un sistema de registro y venta de productos.
 
 * Ruby 2.7.4
 * Rails 6.1.3
@@ -38,13 +38,13 @@ rvm install 2.7.4
 rails db:create
 ```
 
-- Despues hay que correr las migraciones utilizando el comando
+- Después hay que correr las migraciones utilizando el comando
 
 ```bash
 rails db:migrate
 ```
 
-- Despues hay que correr el seed utilizando
+- Después hay que correr el seed utilizando
 
 ```bash
 rails db:seed
@@ -55,11 +55,11 @@ rails db:seed
 rails c
 ```
 
-- Una ves con consola ya podras utilizar los diferentes modelos y objetos creados por el seed
+- Una vez con consola ya podrás utilizar los diferentes modelos y objetos creados por el seed
 
 Consultas de ejemplo:
 
-- El nombre del ultimo producto del ultimo carrito creado
+- El nombre del último producto del útimo carrito creado
 ```bash
 Cart.last.products.last.name
 ```
@@ -69,7 +69,7 @@ Cart.last.products.last.name
 Cart.payed
 ```
 
-- Nombre completo del cliente que realizo la ultima orden de compra
+- Nombre completo del cliente que realizo la última orden de compra
 ```bash
 OrderDetail.last.client.full_name
 ```
