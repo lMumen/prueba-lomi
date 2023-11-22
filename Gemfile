@@ -22,6 +22,12 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Fake gem used to create random data in the seed.rb
+gem 'faker'
+
+# AASM state machines from ruby to handle states of the cart
+gem 'aasm'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
