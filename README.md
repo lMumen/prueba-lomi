@@ -1,4 +1,4 @@
-# README
+# Prueba LOMI
 
 Prueba Lomi es una aplicacion en rails para una prueba tecnica en la que se utilizan los modelos y relaciones de rails para crear un sistema de registro y venta de productos.
 
