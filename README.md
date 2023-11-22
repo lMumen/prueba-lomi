@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Prueba Lomi es una aplicacion en rails para una prueba tecnica en la que se utilizan los modelos y relaciones de rails para crear un sistema de registro y venta de productos.
 
-Things you may want to cover:
+* Ruby 2.7.4
+* Rails 6.1.3
+* Realizado en sistema operativo Ubuntu 20.01
 
-* Ruby version
+Para levantar el proyecto sigue estas instrucciones:
 
-* System dependencies
+- Copiar el respositorio con el siguiente comando
+  $ git clone https://github.com/lMumen/prueba-lomi.git
 
-* Configuration
+- Abrir en la terminal la carpeta en la que se encuentra el repositorio
 
-* Database creation
+- Una vez dentro realizar el bundle install
+  $ bundle install
 
-* Database initialization
+- En caso de que nos pida cambiar la version de ruby utilizar el siguiente comando
+  $ rvm install 2.7.4
 
-* How to run the test suite
+- Despues hay que correr las migraciones utilizando el comando
+  $ rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+- Puede que nos indique que no tenemos la base de datos creada, en tal caso correr el siguiente comando y luego volver a correr el comando de arriba para realizar la migracion
+  $ createdb prueba_lomi_development
 
-* Deployment instructions
+- Despues hay que correr el seed utilizando
+  $ rails db:seed
 
-* ...
+- Luego para acceder a la consola de rails utilizar
+  $ rails c
+
+- Una ves con consola ya podras utilizar los diferentes modelos y objetos creados por el seed
+
